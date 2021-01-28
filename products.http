@@ -1,0 +1,30 @@
+GET http://localhost:3333/products
+
+###
+
+GET http://localhost:3333/products/20
+
+###
+
+POST http://localhost:3333/products
+Content-Type: application/json
+
+{
+    "name" : "Produto teste 6",
+    "price" : 31.32
+}
+
+
+###
+
+PUT http://localhost:3333/products/20
+Content-Type: application/json
+
+{
+    "name" : "Produto teste (updated 2)",
+    "price" : 150.44
+}
+
+###
+
+DELETE http://localhost:3333/products/3
